@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ein digitales Arbeitsblatt zu Wolfgang Borcherts Kurzgeschichte: Bilder ordnen, fünf W-Fragen beantworten und ein Thema formulieren.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Nachts schlafen die Ratten doch · Digitales Arbeitsblatt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="core.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#bildfolge">Zum Arbeitsblatt</a>
+  <header class="masthead"><div class="shell topbar"><a class="brand" href="#">Lesewerkstatt<span>Deutsch · Kurzgeschichten</span></a><span class="privacy-badge">Ohne Anmeldung · Antworten bleiben bei dir</span></div></header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div><p class="eyebrow">Wolfgang Borchert · Digitales Arbeitsblatt</p><h1 id="page-title">Nachts schlafen<br>die Ratten doch</h1><p class="hero-copy">Schau genau hin. Ordne die Bilder, erschließe die Handlung und finde heraus, worum es in der Kurzgeschichte geht.</p></div>
+      <aside class="journey" aria-label="Dein Arbeitsweg"><p class="eyebrow">Dein Arbeitsweg</p><ol><li><span class="step-dot">1</span><div><strong>Bilder ordnen</strong><span>Die Handlung rekonstruieren</span></div></li><li><span class="step-dot">2</span><div><strong>Fünf W-Fragen</strong><span>Das Wesentliche festhalten</span></div></li><li><span class="step-dot">3</span><div><strong>Inhalt zusammenfassen</strong><span>Die Handlung in Stichpunkten</span></div></li></ol><p class="bonus-note">★ Für Schnellere: ein Thema formulieren</p></aside>
+    </section>
+    <nav class="progress" aria-label="Fortschritt"><a href="#bildfolge" id="progress-order"><span>01</span><strong>Bilder ordnen</strong><small id="order-count">Noch offen</small></a><a href="#w-fragen" id="progress-questions"><span>02</span><strong>W-Fragen</strong><small id="question-count">0 von 5 beantwortet</small></a><a href="#inhalt" id="progress-summary"><span>03</span><strong>Inhalt zusammenfassen</strong><small id="summary-count">Noch offen</small></a><a href="#thema" id="progress-topic"><span>★</span><strong>Thema formulieren</strong><small id="topic-count">Freiwillig</small></a></nav>
+    <section id="bildfolge" class="work-section" aria-labelledby="order-title">
+      <div class="section-heading"><div><p class="eyebrow">Aufgabe 01</p><h2 id="order-title">Bring die Geschichte in die richtige Reihenfolge.</h2></div><span class="section-chip">8 Bildkarten</span></div>
+      <p class="section-intro">Ziehe die Bilder an ihren passenden Platz. Gelesen wird von links nach rechts und von oben nach unten. Prüfe anschließend deine Reihenfolge.</p>
+      <div class="interaction-help"><span aria-hidden="true">↔</span><p><strong>Auch ohne Ziehen:</strong> Tippe zwei Karten nacheinander an, um sie zu tauschen. Mit den Pfeilen kannst du eine Karte um einen Platz verschieben. Per Tastatur: Tab zu einer Karte, dann Enter zum Auswählen.</p></div>
+      <p class="small-note">Sprech- und Denkblasen zeigen Aussagen oder Vorstellungen der Figuren.</p>
+      <ol id="cards" class="card-grid" aria-label="Bildfolge zum Ordnen" aria-describedby="order-instructions"></ol>
+      <p id="order-instructions" class="visually-hidden">Ziehe eine Karte auf eine andere Karte, um sie an diesen Platz zu verschieben. Alternativ zwei Karten mit Enter oder Antippen auswählen und tauschen. Die Reihenfolge kann mit den Pfeiltasten-Schaltflächen jeder Karte geändert werden.</p>
+      <div class="toolbar"><button id="check-order" class="button primary" type="button">Reihenfolge prüfen <span aria-hidden="true">✓</span></button><button id="shuffle" class="button secondary" type="button">Neu mischen</button><a id="continue" class="button secondary" href="#w-fragen" hidden>Weiter zu den W-Fragen ↓</a></div>
+      <div id="order-feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+      <p class="selection-note" id="selection-feedback" aria-live="polite"></p>
+    </section>
+    <section id="w-fragen" class="work-section" aria-labelledby="questions-title">
+      <div class="section-heading"><div><p class="eyebrow">Aufgabe 02</p><h2 id="questions-title">Beantworte die fünf W-Fragen.</h2></div><span class="section-chip">In eigenen Worten</span></div>
+      <p class="section-intro">Nutze die Kurzgeschichte und die Bilder. Schreibe in ganzen Sätzen und ergänze passende Zeilenangaben. Was der Text nicht verrät, solltest du auch nicht erfinden.</p>
+      <p class="small-note">Du kannst die Schreibaufgaben unabhängig davon bearbeiten, ob du die Bilder hier sortiert hast.</p>
+      <fieldset id="questions-fields"><legend class="visually-hidden">Fünf W-Fragen zur Kurzgeschichte</legend><div id="question-list" class="question-list"></div></fieldset>
+      <p class="small-note">Freie Antworten werden nicht automatisch benotet. Vergleiche deine eigenen Formulierungen mit den Vergleichsantworten.</p>
+    </section>
+    <section id="inhalt" class="work-section" aria-labelledby="summary-title">
+      <div class="section-heading"><div><p class="eyebrow">Aufgabe 03</p><h2 id="summary-title">Fasse den Inhalt kurz zusammen.</h2></div><span class="section-chip">In Stichpunkten</span></div>
+      <p class="section-intro">Notiere die wichtigsten Ereignisse der Kurzgeschichte in der richtigen Reihenfolge. Wenige Stichpunkte genügen.</p>
+      <div class="topic-card"><label for="summary-answer">Meine Inhaltszusammenfassung</label><textarea id="summary-answer" rows="5" maxlength="3000" placeholder="- …&#10;- …&#10;- …"></textarea><div id="summary-print" class="print-answer"></div></div>
+    </section>
+    <section id="thema" class="work-section" aria-labelledby="topic-title">
+      <div class="section-heading"><div><p class="eyebrow">★ Sternchenaufgabe</p><h2 id="topic-title">Was ist das Thema der Kurzgeschichte?</h2></div><span class="section-chip">Für Schnellere · freiwillig</span></div>
+      <p class="section-intro">Die Handlung sagt, <em>was passiert</em>. Das Thema sagt, <em>worum es grundsätzlich geht</em>. Welche menschliche Erfahrung oder welches Problem wird hier deutlich?</p>
+      <fieldset id="topic-fields"><legend class="visually-hidden">Ein Thema formulieren</legend>
+        <div class="topic-card"><label for="topic-answer">Mein Themenvorschlag</label><p class="field-help" id="topic-help">Du kannst beginnen mit: „Die Kurzgeschichte thematisiert …“</p><textarea id="topic-answer" rows="3" maxlength="2000" aria-describedby="topic-help" placeholder="Formuliere ein Thema in eigenen Worten."></textarea><div id="topic-print" class="print-answer"></div><details class="hint"><summary>Eine Denkstütze öffnen</summary><p>Denke an Jürgens Gefühle zu Beginn und am Ende. Welche Wirkung hat das Gespräch mit dem Mann? Verbinde diese Veränderung mit einer allgemeinen Erfahrung.</p></details><button id="topic-compare" type="button" class="button secondary compare" disabled>Themenvorschlag vergleichen</button>
+          <div id="topic-model" class="model-answer" hidden><p class="model-label">Mögliche Themen · Mehrere Formulierungen sind richtig</p><ul><li>Wie menschliche Zuwendung einem vom Krieg geprägten Kind neue Hoffnung geben kann.</li><li>Angst, Trauer und Hoffnung nach dem Verlust eines nahen Menschen.</li><li>Mitgefühl und behutsamer Trost angesichts von Krieg und Verlust.</li></ul><p><strong>Prüfe deinen Vorschlag:</strong> Ist er allgemeiner als eine Nacherzählung? Passt er zum Anfang und zum Ende? Kannst du ihn am Text begründen?</p><label class="review-label"><input type="checkbox" id="topic-reviewed"> Ich habe meinen Vorschlag verglichen und bei Bedarf überarbeitet.</label></div>
+        </div>
+      </fieldset>
+    </section>
+    <section class="finish-panel" aria-labelledby="finish-title"><div><p class="eyebrow">Deine Ergebnisse</p><h2 id="finish-title">Halte deine Gedanken fest.</h2><p id="finish-status" aria-live="polite">Beantworte die W-Fragen und fasse den Inhalt in Stichpunkten zusammen. Die Themenfrage ist eine freiwillige Zusatzaufgabe. Sichere anschließend deine Ergebnisse.</p><p class="small-note">Deine Eingaben bleiben nur in diesem geöffneten Tab. Beim Neuladen oder Schließen gehen sie verloren. Es gibt keine automatische Abgabe.</p></div><div class="finish-actions"><button id="download-results" class="button primary" type="button">Ergebnisse herunterladen ↓</button><button id="print" class="button secondary" type="button">Arbeitsblatt drucken</button><button id="reset" class="text-button" type="button">Alle Eingaben zurücksetzen</button></div></section>
+    <footer><details class="privacy-info"><summary>Datenschutz &amp; Materialhinweise</summary><div><p><strong>Deine Antworten:</strong> Dieses Arbeitsblatt verwendet keine Anmeldung, keine eigenen Cookies, keine Analysedienste und keine Werbung. Namen oder andere persönliche Angaben werden nicht benötigt. Eingaben werden nur im Arbeitsspeicher des geöffneten Tabs verarbeitet und nicht an einen Server gesendet. Es gibt keine dauerhafte Speicherung im Browser.</p><p><strong>Online-Aufruf:</strong> Beim Laden der Website erhält der Hostinganbieter technische Zugriffsdaten, etwa die IP-Adresse. Das ist von deinen Antworten getrennt. Die Offline-HTML-Datei verarbeitet die Aufgaben ohne Netzwerkzugriff.</p><p><strong>Material:</strong> Kurzgeschichte von Wolfgang Borchert. Die Bildkarten sind KI-generierte Illustrationen zum Text; Sprech- und Denkblasen stellen Aussagen oder Vorstellungen dar. Die Bildfolge endet mit dem Versprechen des Mannes und Jürgens Warten.</p></div></details><p class="footer-note">Lesen · Ordnen · Verstehen</p></footer>
+  </main>
+  <dialog id="image-dialog" aria-labelledby="image-title"><div class="dialog-heading"><h2 id="image-title">Bildkarte</h2><button id="close-image" class="icon-button" type="button" aria-label="Bildansicht schließen">×</button></div><div id="large-image"></div><p id="image-description" class="small-note"></p><button id="close-image-bottom" class="button secondary" type="button">Zurück zum Arbeitsblatt</button></dialog>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">Neu beginnen?</h2><p>Die Bildfolge und alle eingetragenen Antworten werden zurückgesetzt. Lade deine Ergebnisse vorher herunter, wenn du sie behalten möchtest.</p><div class="toolbar"><button id="confirm-reset" class="button primary" type="button">Alles zurücksetzen</button><button id="cancel-reset" class="button secondary" type="button">Weiterarbeiten</button></div></dialog>
+  <noscript><p class="noscript">Für die Bildsortierung und Selbstkontrolle muss JavaScript im Browser aktiviert sein.</p></noscript>
+</body>
+</html>
